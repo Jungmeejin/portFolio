@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>MEEJIN's PORTFOLIO</title>
+    <link rel="shortcut icon" href="../images/favicon3_MsN_icon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../font/font.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/sub_style.css"/>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function() {
+// Show or hide the sticky footer button
+        
+		$(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('.top_btn').fadeIn(300);
+            } else {
+                $('.top_btn').fadeOut(300);
+            }
+        });
+			
+		// Animate the scroll to top
+		$('.top_btn').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 500);
+                return false;
+        });
+        
+        $(window).scroll(function() {
+            var scrollHeight = $(document).height();
+            var scrollPosition = $(window).height() + $(window).scrollTop();
+            if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+                $(".top_btn").addClass("top_btn_fix");
+            } else {
+                $(".top_btn").removeClass("top_btn_fix");
+            }
+        }); 
+        
+        //slick
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            focusOnSelect: true,
+            arrows:false,
+            autoplay:1,
+        });
+
+        $('a[data-slide]').click(function(e) {
+           e.preventDefault();
+           var slideno = $(this).data('slide');
+           $('.slider-nav').slick('slickGoTo', slideno - 1);
+        });
+        
+
+        
+    });
+        
+    </script>
+</head>
+
+<body>
+<!--START-->
+<div id="wrap">
+    <!--header-->
+    <header id="header">
+        <div class="inner cf">
+            <h1><a href="../index.html"><img src="../images/LOGO_2.png"/></a></h1>
+            <div class="nav">PORTFOLIO</div>
+            <p>Strive for excellence, not perfection</p>
+        </div>
+    </header>
+    <!--header-->
+    
+    <!--container-->
+    <div id="container">
+        
+        <!--webDesign-->
+        <div class="webD">
+        <div class="inner">
+            <div class="Title">
+                <h2>WEB Design</h2>
+                <span></span>
+            </div>
+			
+			<div class="webBox inner1100">
+				<div class="webB00">
+					<a href="#">
+						<img src="../images/sub01/web01.png" alt="웹디자인1">
+						<div class="webB00Txt">
+							<h4>AVENUE FRANCE</h4>
+							<p>Web &amp; Mobile &amp;  Response</p>
+							<p class="mar10">Design X Publishing</p>
+							<span>At work</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="webB00">
+					<a href="#">
+						<img src="../images/sub01/web02.png" alt="웹디자인2">
+						<div class="webB00Txt">
+							<h4>HITE JINRO - Queen’s Ale</h4>
+							<p>Web (Full Page)</p>
+							<p class="mar10">Design X Publishing</p>
+							<span>2018.11.19</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="webB00">
+					<a href="#">
+						<img src="../images/sub01/web03.png" alt="웹디자인3">
+						<div class="webB00Txt">
+							<h4>CESCO</h4>
+							<p>Web &amp; Mobile</p>
+							<p class="mar10">Design X Publishing</p>
+							<span>2018.11.13</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="webB00">
+					<a href="#">
+						<img src="../images/sub01/web04.png" alt="웹디자인4">
+						<div class="webB00Txt">
+							<h4>MY PORTFOLIO</h4>
+							<p>Web &amp; Mobile &amp;  Response</p>
+							<p class="mar10">Design X Publishing</p>
+							<span>At work</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="webB00">
+					<a href="#">
+						<img src="../images/sub01/web05.png" alt="웹디자인5">
+						<div class="webB00Txt blankTxt">
+							<h4>BLANK</h4>
+							<span>At work</span>
+						</div>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+        </div>
+        <!--webDesign-->
+        
+        <!--BannerDesign-->
+        <div class="bannerD">
+            <div class="inner">
+            <div class="Title">
+                <h2>Banner Design</h2>
+                <span></span>
+            </div>
+				<!--한줄에 박스2개-->
+            	<div class="bannerBox_2 cf">
+				<div class="inner1000">
+					<div class="banB00">
+						<a href="#">
+                            <div class="banB_img">
+				                <img src="../images/sub01/banner01.png" alt="배너1">
+                            </div>
+                            <div class="info">
+                                <h3>Opening of Gyeongbok Palace at night</h3>
+                                <p>Admission Ticket_Design</p>
+                            </div>
+						</a>
+					</div>
+					
+					<div class="banB00 marR0">
+						<a href="#">
+                            <div class="banB_img">
+				                <img src="../images/sub01/banner02.png" alt="배너2">
+                            </div>
+                            <div class="info">
+                                <h3>CHUU X FANFAN</h3>
+                                <p>Product_Design</p>
+                            </div>
+						</a>
+					</div>
+					
+					<div class="banB00">
+						<a href="#">
+                            <div class="banB_img">
+				                <img src="../images/sub01/banner03.png" alt="배너3">
+                            </div>
+                            <div class="info">
+                                <h3>KrispyKreme</h3>
+                                <p>Christmas Event_Design</p>
+                            </div>
+						</a>
+					</div>
+					
+					<div class="banB00 marR0">
+						<a href="#">
+                            <div class="banB_img">
+                                <img src="../images/sub01/banner04.png" alt="배너4">
+                            </div>
+                            <div class="info">
+                                <h3>Atomic BLONDE</h3>
+                                <p>Movie banner_Design</p>
+                            </div>
+						</a>
+					</div>
+				</div>
+				</div>
+				<!--한줄에 박스2개-->
+				
+				<!--한줄에 박스3개-->
+				<div class="bannerBox_3 cf">
+				<div class="inner1000">
+					<div class="banB11">
+						<a href="#">
+                            <div class="banB_img">
+                                <img src="../images/sub01/banner05.png" alt="팝업창1">
+                            </div>
+                            <div class="info">
+                                <h3>COCONUT Park</h3>
+                                <p>Admission Ticket_Design</p>
+                            </div>
+						</a>
+					</div>
+					
+					<div class="banB11_2">
+						<a href="#">
+                            <div class="banB_img">
+				                <img src="../images/sub01/banner06.png" alt="사각배너1">
+                            </div>
+                            <div class="info">
+                                <h3>COCONUT Park : FOAM Party</h3>
+                                <p>Event_Design</p>
+                            </div>
+						</a>
+					</div>
+					
+					<div class="banB11 marR0">
+						<a href="#">
+                            <div class="banB_img">
+                                <img src="../images/sub01/banner07.png" alt="팝업창2">
+                            </div>
+                            <div class="info">
+                                <h3>HAYDEN</h3>
+                                <p>Event_Design</p>
+                            </div>
+						</a>
+					</div>
+				</div>
+				</div>
+				<!--한줄에 박스3개-->
+			</div>
+		</div>
+            
+            <!--posterDesign-->
+            <div class="posterD">
+				<div class="inner">
+                <div class="Title">
+                    <h2>Poster Design</h2>
+                    <span></span>
+                </div>
+                <div class="poster_box cf">
+                    <div class="p_box00">
+                        <figure class="effect-apollo">
+                        <a href="#">
+                            <img src="../images/sub01/poster01.png"/>
+                            <figcaption>
+                                <p>Korean Air<br/>- Welcome to TajMahal</p>
+                            </figcaption>
+                        </a>
+                        </figure>
+                    </div>
+                    <div class="p_box00">
+                        <figure class="effect-apollo">
+                        <a href="#">
+                            <img src="../images/sub01/poster02.png"/>
+                            <figcaption>
+                                <p>BlueMountain<br/>- Cactus<br/>front</p>
+                            </figcaption>
+                        </a>
+                        </figure>
+                    </div> 
+                    <div class="p_box00 mR0">
+                        <figure class="effect-apollo">
+                        <a href="#">
+                            <img src="../images/sub01/poster03.png"/>
+                            <figcaption>
+                                <p>BlueMountain<br/>- Cactus<br/>back</p>
+                            </figcaption>
+                        </a>
+                	</figure>
+            	</div> 
+        	</div>
+        </div>
+		</div>
+    	<!--posterDesign-->
+        
+        <!--graphicDesign-->
+        <div class="graD cf">
+        <div class="inner">
+            <h3>Graphic Design</h3>
+            <!--big Art-->
+            <div class="bigGraBox inner1000 slider slider-for">
+                <div class="bGraB00">
+                    <img src="../images/sub01/bigArt01_1.png" alt="bigArt1"/>
+                </div>
+                <div class="bGraB00">
+                    <img src="../images/sub01/bigArt02_1.png" alt="bigArt2"/>
+                </div>
+                <div class="bGraB00">
+                    <img src="../images/sub01/bigArt03_1.png" alt="bigArt3"/>
+                </div>
+                <div class="bGraB00">
+                    <img src="../images/sub01/bigArt04_1.png" alt="bigArt4"/>
+                </div>
+                <div class="bGraB00">
+                    <img src="../images/sub01/bigArt05_1.png" alt="bigArt5"/>
+                </div>
+                <div class="bGraB00">
+                    <img src="../images/sub01/bigArt06_1.png" alt="bigArt6"/>
+                </div>
+            </div>
+            <!--big Art-->
+        
+            <!--navBox-->
+            <div class="graBox inner1100 slider slider-nav">
+                <div class="graB00">
+                    <img src="../images/sub01/art01.png" alt="artWork1">
+                </div>
+                <div class="graB00">
+                    <img src="../images/sub01/art02.png" alt="artWork2">
+                </div>
+                <div class="graB00">
+                    <img src="../images/sub01/art03.png" alt="artWork3">
+                </div>
+                <div class="graB00">
+                    <img src="../images/sub01/art04.png" alt="artWork4">
+                </div>
+                <div class="graB00">
+                    <img src="../images/sub01/art05.png" alt="artWork5">
+                </div>
+                <div class="graB00">
+                    <img src="../images/sub01/art06.png" alt="artWork6">
+                </div>
+            </div>
+            <!--navBox-->
+        </div>    
+        </div>
+        <!--graphicDesign-->
+		
+    </div>
+    <!--container-->
+    
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <p>In the field of observation, chance favors only the prepared mind.</p>
+            <h5>&copy; 2018. JUNGMEEJIN. ALL RIGHTS RESERVED.</h5>
+        </div>
+        <div class="top_btn">
+            <a href="#">
+                <img src="../images/top_btn.png"/>
+                <p>TOP</p>
+            </a>
+        </div>
+    </footer>
+    <!--footer-->
+</div>
+<!--END-->    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
