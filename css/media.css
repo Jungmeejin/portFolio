@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*the smallest size - 575px*/
+@media screen and (max-width:575px){
+    body{
+        min-width: 100%;
+    }
+    .inner{
+        width: 100%;
+    }
+    #header{
+        width:100%;
+        background-size:100% 100%;
+    }
+}
+/*the smallest size - 575px*/
