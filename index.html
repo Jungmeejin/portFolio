@@ -3,6 +3,7 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>MEEJIN's PORTFOLIO</title>
     <link rel="shortcut icon" href="images/favicon3_MsN_icon.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="font/font.css"/>
@@ -51,7 +52,11 @@
             if($(this).scrollTop() >= 550) $el.addClass('shown');
             else $el.removeClass('shown');
         });
-    
+        
+        
+        $('a[href="#"]').click(function(e)     {e.preventDefault();
+        }); 
+        //a href="#" 이동 금지
 
     });
     </script>
@@ -85,8 +90,8 @@
     
     <!--fix_gnb-->
     <div class="fix_gnb" id="fix_gnb">
-        <div class="inner">
-            <h1><a href="#header"><img src="images/LOGO_fix_gnb.png" alt="fixLogo"/></a></h1>
+        <div class="inner cf">
+            <h1><a href="#header"><img src="images/LOGO_fix_gnb_1.png" alt="fixLogo"/></a></h1>
             <ul>
                 <li class="menu-on"><a href="#header">HOME</a></li>
                 <li><a href="#pofol">PORTFOLIO</a></li>
@@ -107,6 +112,8 @@
                 <div class="intro_box">
                     <h2>HELLO<img src="images/hello_icon.png" alt="hello" class="swing"/></h2>
                     <p>I am a Web Designer, Web Publisher. <span>JUNG MEE JIN.</span></p>
+                    <p class="m_intro">I am a Web Designer,<br/>Web Publisher.<br/>
+                    <span>JUNG MEE JIN.</span></p>
                 </div>
                 <!--simply_box-->
                 
@@ -117,6 +124,11 @@
                     <p>저는 꼼꼼하고 섬세하게 웹을 디자인하며, 한 눈에 쏙 들어오는 깔끔한 디자인을 가진 웹 페이지를 구현할 수 있습니다.<br/>모든 사람이 만족하고, 이용할 수 있는 웹 페이지를 만드는 것이 목표입니다.</p>
                     <p>디자인은 서로의 눈을 통한 의사소통이라고 생각합니다.<br/>저는 의사소통을 하기 위해 주변의 소리에 귀 기울이며 이해하고 공감하여,<br/>모든 소리를 스펀지처럼 흡수하여 소통을 원할히 표현할 줄 아는 디자이너가 되고 싶습니다.</p>
                     <p>의사소통의 아름다움을 여러분과 함께 느끼고 싶습니다.</p>
+                </div>
+                <div  class="m_content">
+                    <p>디자인은 서로의 눈을 통한 의사소통이라고 생각합니다.<br/>저는 원활한 소통이 가능한,<br/>소통의 중요성을 아는 디자이너가 되고 싶습니다.
+                    <br/><span>의사소통의 아름다움을 여러분과 함께 느끼고 싶습니다.</span></p>
+                    <img src="images/mobile/2arrow_down.png" alt="arrow">
                 </div>
                 <!--simply_content-->
             </div>
@@ -238,6 +250,61 @@
         </div>
         <!--portfolio-->
         
+        <!--m_pofol-->
+        <div class="m_pofol" id="pofol">
+            <div class="m_inner">
+                <h3>PORTFOLIO</h3>
+                <div class="m_pofol_box">
+                    <a href="#">
+                        <img src="images/mobile/pofol_01_avenu.png" alt="pofol"/>
+                    </a>
+                    <h5>AVENUE FRANCE</h5>
+                    <p>Design X Publishing
+                    <br/>AT WORK</p>
+                </div>
+                <div class="m_pofol_box">
+                    <a href="https://jungmeejin.github.io/Queens_Ale/" target="_blank">
+                        <img src="images/mobile/pofol_02_queens.png" alt="pofol"/>
+                    </a>
+                    <h5>HITE JINRO - Queen's ALE</h5>
+                    <p>Design X Publishing
+                    <br/>2018.11.19</p>
+                </div>
+                <div class="m_pofol_box">
+                    <a href="https://jungmeejin.github.io/m.cesco/" target="_blank">
+                        <img src="images/mobile/pofol_03_cesco.png" alt="pofol"/>
+                    </a>
+                    <h5>CESCO</h5>
+                    <p>Design X Publishing
+                    <br/>2018.11.13</p>
+                </div>
+                <div class="m_pofol_box">
+                    <a href="https://jungmeejin.github.io/portFolio/" target="_blank">
+                        <img src="images/mobile/pofol_04_pofol.png" alt="pofol"/>
+                    </a>
+                    <h5>MY PORTFOLIO</h5>
+                    <p>Design X Publishing
+                    <br/>AT WORK</p>
+                </div>
+                <div class="m_pofol_box m_pofol_last">
+                    <a href="#">
+                        <img src="images/mobile/pofol_working.png" alt="pofol"/>
+                    </a>
+                    <h5>COMING SOON</h5>
+                </div>
+                
+                <!--loadMore-->
+                <div class="More">
+                    <a href="#">
+                        LOAD MORE
+                    </a>
+                </div>
+                <!--loadMore-->
+                
+            </div>
+        </div>
+        <!--m_pofol-->
+        
         <!--betweenBanner-->
         <div class="betweenBanner">
             <div class="inner">
@@ -293,6 +360,22 @@
         </div>
         <!--services-->
         
+        <!--m_services-->
+        <div class="m_services" id="services">
+            <div class="m_inner">
+                <h3>SERVICES</h3>
+                <img src="images/mobile/services_img.png" alt="서비스"/>
+                <span></span>
+                <p>모바일, 태블릿, PC 등<br/>
+브라우저 종류 및 버전에 따른 기능 차이에<br/> 
+대하여 호환이 가능하고, 다른 기종에 따라<br/>
+달리 구현되는 기술을 동일하게 구현함으로써<br/>
+어느 한쪽에 최적화되어 치우치지 않도록 제작합니다<br/>
+</p>
+            </div>
+        </div>
+        <!--m_services-->
+        
         <!--contact-->
         <div class="contact" id="contact">
             <div class="inner">
@@ -310,14 +393,26 @@
                 </ul>
             </div>
         </div>
+        
+        <div class="m_contact" id="contact">
+            <div class="m_inner">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li>PHONE<br/><span>010.3138.4209</span></li>
+                    <li>E-MAIL<br/><span>meej18151@gmail.com</span></li>
+                    <li>ADDRESS<br/><span>YoungDo. Busan. Republic of Korea</span></li>
+                </ul>
+            </div>
+        </div>
+    
         <!--contact-->
     </div>
     <!--container-->
     
     <!--footer-->
     <footer id="footer">
-        <div class="inner">
-            <p>In the field of observation, chance favors only the prepared mind.</p>
+        <div class="inner m_inner">
+            <p>In the field of observation,<span><br/></span> chance favors only the prepared mind.</p>
             <h5>&copy; 2018. JUNGMEEJIN. ALL RIGHTS RESERVED.</h5>
         </div>
     </footer>
