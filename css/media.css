@@ -1,6 +1,376 @@
 @charset "utf-8";
 
-/*the smallest size - 575px*/
+/*max width:720px*/
+@media screen and (max-width:720px){
+    body{
+        width:100%;
+        min-width: auto;
+        font-family: 'GothamPro';
+    }
+    #wrap{
+        width:100%;
+    }
+    /*header*/
+    #header{
+        background-size:cover;
+        height: 350px;
+        padding-top:50px;
+    }
+    /*logo*/
+    .mobBox1{
+        width:calc(100% - 50px);
+        height: auto;
+        padding-bottom: 2%;
+        background-color:rgba(232,232,232,0.4);
+        margin:0 auto;
+    }
+    #header h1{
+        background:url(../images/mobile/logo.png) no-repeat;
+        background-size:90%;
+        height: 150px;
+        padding:0;
+        margin:5% 0 0 5%;
+        display: inline-block;
+    }
+    #header h1 a{
+        height: 150px;
+    }
+    #header h1 a img{
+        display: none;
+    }
+    /*logo*/
+    
+    /*gnb*/
+    .gnb{
+        width: auto;
+        padding:5% 15px;
+    }
+    .gnb ul{
+        background-color:transparent;
+        width: auto;
+        text-align:right;
+        font-weight: 200;
+        padding:0;
+    }
+    .gnb ul li{
+        padding-bottom: 15px;
+        height: 25px;
+    }
+    .gnb ul li a{
+        font-size:20px;
+        color:#4c4c4c;
+        display:block;
+    }
+        
+    .gnb ul li a span{
+        content:"";
+        display:block;
+        height: 2px;
+        background:#e2e2e2;
+        width: auto;
+        margin-top: 0px;
+        transition: none;
+    }
+    /*gnb*/
+    #header p{
+        color:#3a3a3a;
+        padding:10% 2% 0 0;
+        font-size:16px;
+    }
+    
+    #fix_gnb{
+        display:none;
+    }
+    .fix_gnb{
+        display:none;
+        height: 0;
+    }
+    .fix_gnb h1{
+        display:none;
+    }
+    /*
+    .fix_gnb{
+        height:93px;
+    }
+    .fix_gnb .inner{
+        width:auto;
+    }
+    .fix_gnb h1{
+        display:inline-block;
+    }
+    .fix_gnb h1 a{
+        display:block;
+    }
+    .fix_gnb h1 a img{
+        display:block;
+        width:70%;
+    }
+    .fix_gnb ul{
+        display:inline-block;
+        float:right;
+        margin-top:15px;;
+        line-height: 30px;
+    }
+    .fix_gnb ul .m_gnb_block{
+        display:block;
+    }
+    .fix_gnb ul .gnb_inblock{
+        display:none;
+    }
+    .fix_gnb ul li{
+        font-size:14px;
+        margin-right:20px;
+    }
+    .fix_gnb ul li a{
+        display:block;
+    }
+    */
+    
+    /*header*/
+    
+    /*simply_intro*/
+    .simply_intro{
+        padding:50px 3% 50px 3%;
+    }
+    .simply_intro .inner{
+        width:auto;
+    }
+    /*simply_box*/
+    .intro_box{
+        text-align: center;
+        border: none;
+    }
+    .intro_box h2{
+        font-size:20px;
+        padding-bottom: 12px;
+    }
+    .intro_box h2 img{
+        width:24px;
+        height: auto;
+    }
+    .intro_box p,.intro_box span{
+        display:block;
+    }
+    .intro_box p{
+        font-size:13px;
+        line-height: 22px;
+    }
+    .intro_box span{
+        padding-top:8px;
+        font-size:20px; 
+    }
+    .intro_box .m_intro, .intro_box .m_intro span{
+        display: none;}
+    /*simply_box*/
+    /*simply_content*/
+    .intro_content{
+        display:none;
+    }
+    .m_content{
+        text-align: center;
+        display:block;
+        margin:5px 3% 0 3%;
+        font-size:14px;
+        line-height: 25px;
+    }
+    .m_content p{
+        font-family: 'NotoSans';
+    }
+    .m_content span{
+        line-height: 50px;
+        font-weight: bold;
+    }
+    .m_content img{
+        width:28px;
+        height: auto;
+        margin-top:15px;
+    }
+    /*simply_content*/
+    /*simply_intro*/
+    
+    /*pofol*/
+    .pofol{
+        display:none;
+    }
+    .m_pofol{
+        display: block;
+        background: url(../images/mobile/pofol_bg.png) repeat;
+    }
+    .m_pofol .m_inner{
+        background-color:#ececec;
+    }
+    .m_pofol h3{
+        text-align: center;
+        padding:30px 0;
+        color:#4a4a4a;
+    }
+    .m_pofol_box{
+        text-align: center;
+    }
+    .m_pofol_box a{
+        display:block;
+    }
+    .m_pofol_box a img{
+        display:block;
+        width:260px;
+        margin:0 auto;
+    }
+    .m_pofol_box h5{
+        font-size:17px;
+        font-weight: normal;
+        margin:18px 0 10px 0;
+    }
+    .m_pofol_box p{
+        font-size:15px;
+        font-weight: 200;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+    .m_pofol_last{
+        padding-bottom: 30px;
+    }
+    
+    /*loadMore*/
+    .More{
+        margin-right:3%;
+        padding-bottom: 30px;
+    }
+    .More a{
+        float:right;
+        color:black;
+        font-weight: 200;
+    }
+    /*loadMore*/
+    /*pofol*/
+    
+    /*betweenBanner*/
+    .betweenBanner{
+        display:none;
+    }
+    /*betweenBanner*/
+    
+    /*services*/
+    .services{
+        display:none;
+    }
+    .m_services{
+        display:block;
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    .m_services h3{
+        text-align: center;
+        padding:30px 0;
+        color:#4a4a4a;
+    }
+    .m_services img{
+        display:block;
+        width:238px;
+        margin:0 auto;
+    }
+    .m_services span{
+        width:1px;
+        height: 14px;
+        background-color:#333;
+        content:"";
+        display: block;
+        margin:0 auto;
+        margin-top:15px;
+        margin-bottom: 10px;
+    }
+    .m_services p{
+        text-align: center;
+        font-size:13px;
+        line-height: 23px;
+        
+    }   
+    /*services*/
+    
+    /*contact*/
+    .contact{
+        display:none;
+    }
+    .m_contact{
+        display:block;
+        background:url(../images/mobile/contact_bg.png) no-repeat;
+        color:#fff;
+        background-size:cover;
+    }
+    .m_contact h3{
+        text-align: center;
+        padding:30px 0;
+        color:#fff;
+    }
+    .m_contact ul{
+        line-height: 25px;
+        padding-bottom: 35px;
+    }
+    .m_contact ul li{
+        font-size:17px;
+        padding-bottom: 10px;
+    }
+    .m_contact ul li span{
+        font-size:14px;
+        font-weight: 200;
+    }
+    /*contect*/
+    
+    /*footer*/
+    #footer{}
+    #footer .inner{
+        display:none;
+    }
+    #footer .m_inner{
+        display:block;
+    }
+    #footer p{
+        font-size:15px;
+        line-height: 10px;
+        padding-top:50px;
+    }
+    #footer p span{
+        display:block;
+    }
+    #footer h5{
+        font-size:3.5vw;
+        padding-top:30px;
+        padding-bottom: 40px;
+    }
+    /*footer*/
+}
+
+
+/*iPhone4:width:320px*/
+@media only screen and (max-width : 320px) { 
+    /*index*/
+    body{
+        width:100%;
+        min-width: auto;
+    }
+    #wrap{
+        width:100%;
+    }
+    #header{
+        background-size:cover;
+    }
+    #header h1{}
+    
+    
+    
+    .intro_box .m_intro, .intro_box .m_intro span{
+        display:block;
+        font-size:18px;
+        text-align: center;
+    }
+    .m_intro{
+        line-height: 22px;
+    }
+    .m_intro span{
+        padding-top:8px;
+        font-size:20px;
+    }
+}
+/*the smallest size - 575px
 @media screen and (max-width:575px){
     body{
         min-width: 100%;

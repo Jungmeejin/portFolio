@@ -4,9 +4,6 @@ body, h1, h2, h3, h4, h5, h6, p{
     margin:0;
     padding:0;
 } 
-body{
-    min-width:1200px;
-}
 ul, li, dl, dt, dd{
     margin:0;
     padding:0;
@@ -40,8 +37,13 @@ a{
     display:block;
     clear:both;
 }
+.m_inner{
+    width:auto;
+    margin:0 5%;
+}
 
 body{
     font-family: 'NotoSans', 'GothamPro', sans-serif;
+    min-width:1200px;
 }
 
